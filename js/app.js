@@ -10,7 +10,7 @@ app.controller('quoteCtrl', function($scope, $http, $sce) {
         
         $http({
             method: 'JSONP',
-            url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+            url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
             params: {
                 _jsonp: 'JSON_CALLBACK'
             }
