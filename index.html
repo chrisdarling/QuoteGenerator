@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Random Quote Generator</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+
+    <link rel="stylesheet" type="text/css" href="css/quote.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller="quoteCtrl">
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2">
+			<div id="content">
+				<h1 class="text-center">Quote Generator</h1>
+				<span ng-bind-html="quoteInfo.text" class="text-center"></span>
+				<p><span class="text-center pull-right" ng-bind-html="quoteInfo.source"><span></p>
+				<div class="row">
+					<div class="col-sm-offset-5 col-sm-2 text-center">
+						<button id="quoteBtn" ng-click="newQuote()" class="btn pull-right">New Quote</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
